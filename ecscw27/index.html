@@ -6,140 +6,168 @@
 <title>ECSCW 2027 Home · ECSCW 2027 (redesign mockup)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#F6F7F5}
-a{color:#08546A}a:hover{color:#10212B}
+body{margin:0;background:#F7FAFF}
+a{color:#01456F}a:hover{color:#15364E}
 </style>
 <style>html{scroll-behavior:smooth}*{box-sizing:border-box}</style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<div style="font-family: Inter, system-ui, sans-serif; color: #10212B; background: #F6F7F5; min-height: 100%">
+<div style="font-family: Poppins, system-ui, sans-serif; color: #15364E; background: #F7FAFF; min-height: 100%">
 
-<header style="background: #FFFFFF; border-bottom: 1px solid #DDE3E6">
-<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #10212B">
-<span style="width: 44px; height: 44px; border-radius: 10px; background: #10212B; color: #F2B134; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 15px">E27</span>
-<span style="display: flex; flex-direction: column"><span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px">ECSCW 2027</span><span style="font-size: 12px; color: #4A5A63">Limassol, Cyprus · 5–9 July</span></span>
-</a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-size: 15px; font-weight: 500">
-<a href="call-for-papers.html" style="padding: 12px 14px; border-radius: 8px; text-decoration: none; color: #10212B">Call for Papers</a>
-<a href="program.html" style="padding: 12px 14px; border-radius: 8px; text-decoration: none; color: #10212B">Program</a>
-<a href="venue.html" style="padding: 12px 14px; border-radius: 8px; text-decoration: none; color: #10212B">Venue &amp; Travel</a>
-<a href="committees.html" style="padding: 12px 14px; border-radius: 8px; text-decoration: none; color: #10212B">Committees</a>
-<a href="registration.html" style="padding: 12px 20px; border-radius: 8px; text-decoration: none; color: #FFFFFF; background: #0B6E8A; margin-left: 8px">Register</a>
+<header class="site-header">
+<div class="site-header-inner">
+<a href="index.html" class="brand"><img src="assets/ecscw27-logo.png" alt="ECSCW 2027 Conference" width="163" height="52"><span>Limassol, Cyprus<br>5–9 July 2027</span></a>
+<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+<nav id="main-menu" aria-label="Main">
+<ul class="menu">
+<li class="menu-item"><a class="menu-link" href="news.html">News</a></li>
+<li class="menu-item"><a class="menu-link" href="submissions.html">Submissions</a><button type="button" class="submenu-toggle" aria-expanded="false" aria-label="Show Submissions menu"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"></path></svg></button>
+<ul class="submenu">
+<li><a href="submissions.html#conference-papers">(Full) Conference Papers</a></li>
+<li><a href="submissions.html#exploratory-papers">Exploratory Papers</a></li>
+<li><a href="submissions.html#masterclasses">Masterclasses/Tutorials</a></li>
+<li><a href="submissions.html#workshops">Workshops</a></li>
+<li><a href="submissions.html#posters-and-demos">Posters and Demos</a></li>
+<li><a href="submissions.html#doctoral-colloquium">Doctoral Colloquium</a></li>
+<li><a href="submissions.html#journal-papers">Journal Papers</a></li>
+<li><a href="submissions.html#template">EUSSET Conference Template</a></li>
+</ul></li>
+<li class="menu-item"><a class="menu-link" href="program.html">Program</a><button type="button" class="submenu-toggle" aria-expanded="false" aria-label="Show Program menu"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"></path></svg></button>
+<ul class="submenu">
+<li><a href="program.html#keynotes">Keynotes</a></li>
+<li><a href="program.html#workshops">Workshops</a></li>
+<li><a href="program.html#paper-presentations">Paper Presentations</a></li>
+<li><a href="program.html#posters-and-demos">Posters and Demos</a></li>
+</ul></li>
+<li class="menu-item"><a class="menu-link" href="attending.html">Attending</a><button type="button" class="submenu-toggle" aria-expanded="false" aria-label="Show Attending menu"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"></path></svg></button>
+<ul class="submenu">
+<li><a href="registration.html">Registration and Costs</a></li>
+<li><a href="venue.html">Venue and Accommodation</a></li>
+<li><a href="venue.html#visa">Country Information</a></li>
+<li><a href="venue.html#explore">Limassol and around</a></li>
+<li><a href="attending.html#early-career-support">EUSSET Early Career Travel Support</a></li>
+<li><a href="attending.html#student-volunteers">Student Volunteers</a></li>
+<li><a href="attending.html#presenter-information">Presenter Information</a></li>
+</ul></li>
+<li class="menu-item"><a class="menu-link" href="committees.html">Committees</a><button type="button" class="submenu-toggle" aria-expanded="false" aria-label="Show Committees menu"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"></path></svg></button>
+<ul class="submenu">
+<li><a href="committees.html#program-committee">Program Committee</a></li>
+<li><a href="committees.html#organizing-committee">Organizing Committee</a></li>
+</ul></li>
+</ul>
 </nav>
 </div>
 </header>
 
-<section style="background: #10212B; color: #FFFFFF">
-<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 56px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 24px">
-<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(242,177,52,0.14); color: #F2B134; font-size: 14px; font-weight: 600"><span style="width: 8px; height: 8px; border-radius: 50%; background: #F2B134"></span>Call for Papers is open</span>
-<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 64px; line-height: 1.02; letter-spacing: -1.5px">Designing for cooperation, together.</h1>
-<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #C9D4DA; max-width: 560px">The 25th EUSSET Conference on Computer-Supported Cooperative Work brings researchers, practitioners and designers to the Mediterranean coast of Limassol, Cyprus.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
-<a href="call-for-papers.html" style="padding: 15px 24px; border-radius: 10px; background: #F2B134; color: #10212B; font-weight: 600; text-decoration: none">Read the Call for Papers</a>
-<a href="registration.html" style="padding: 15px 24px; border-radius: 10px; border: 1px solid #3C5563; color: #FFFFFF; font-weight: 600; text-decoration: none">Registration details</a>
+<section class="hero" aria-label="ECSCW 2027">
+<img class="hero-photo" src="assets/limassol-seafront.jpg" alt="Aerial view of the Limassol seafront: a tall white tower and apartment blocks beside a sandy beach and the sea, under a deep blue sky." width="1920" height="1080">
+<div class="hero-text">
+<span class="hero-pill">Call for Papers is open</span>
+<h1>ECSCW 2027</h1>
+<p class="hero-sub">25th EUSSET Conference on Computer-Supported Cooperative Work</p>
+<p class="hero-when">5–9 July 2027 · Limassol, Cyprus</p>
 </div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 16px">
-<div style="height: 300px; border-radius: 20px; background: #16394A; border: 1px solid #2A4B5B; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; position: relative; overflow: hidden">
-<svg aria-hidden="true" viewBox="0 0 400 120" preserveAspectRatio="none" style="position: absolute; left: 0; right: 0; bottom: 60px; width: 100%; height: 120px"><path d="M0 70 Q50 40 100 70 T200 70 T300 70 T400 70" fill="none" stroke="#2F6F86" stroke-width="2"></path><path d="M0 95 Q50 65 100 95 T200 95 T300 95 T400 95" fill="none" stroke="#24566A" stroke-width="2"></path><circle cx="320" cy="30" r="18" fill="#F2B134"></circle></svg>
-<span style="position: relative; font-size: 13px; color: #A9BAC3">[Photo: Limassol seafront / St. Raphael Resort at golden hour]</span>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-<div style="padding: 18px 20px; border-radius: 14px; background: #16394A"><div style="font-size: 13px; color: #A9BAC3">Dates</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600; margin-top: 4px">5–9 July 2027</div></div>
-<div style="padding: 18px 20px; border-radius: 14px; background: #16394A"><div style="font-size: 13px; color: #A9BAC3">Venue</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600; margin-top: 4px">St. Raphael Resort</div></div>
-</div>
+</section>
+
+<section class="hero-bar">
+<div class="hero-bar-inner">
+<div><div style="font-size: 13px; color: #B9CCDB">Venue</div><div style="font-size: 19px; font-weight: 600">St. Raphael Resort &amp; Marina</div></div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="submissions.html" style="padding: 13px 22px; border-radius: 10px; background: #45C877; color: #15364E; font-weight: 600; text-decoration: none">Read the Call for Papers</a>
+<a href="registration.html" style="padding: 13px 22px; border-radius: 10px; border: 1px solid #8FB0C8; color: #FFFFFF; font-weight: 600; text-decoration: none">Registration details</a>
 </div>
 </div>
 </section>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 80px 24px 40px">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 32px">
-<div><div style="font-size: 14px; font-weight: 600; color: #0B6E8A; letter-spacing: 1px; text-transform: uppercase">Key dates</div><h2 style="margin: 8px 0 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.5px">Plan your submission</h2></div>
-<a href="call-for-papers.html" style="font-weight: 600">All deadlines are AoE →</a>
+<div><div style="font-size: 14px; font-weight: 600; color: #157A43; letter-spacing: 1px; text-transform: uppercase">Key dates</div><h2 style="margin: 8px 0 0; font-family: 'Poppins', sans-serif; font-size: 40px; letter-spacing: -0.5px">Plan your submission</h2></div>
+<a href="submissions.html#dates" style="font-weight: 600">All deadlines are AoE →</a>
 </div>
 <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 16px">
-<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A5A63">01 · Optional</span><span style="font-weight: 600">Abstract submission (Research / Industry)</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; color: #0B6E8A">TBA</span></li>
-<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A5A63">02</span><span style="font-weight: 600">Full papers: Research, Industry, Tools, Posters</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; color: #0B6E8A">TBA</span></li>
-<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A5A63">03</span><span style="font-weight: 600">Author notification</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; color: #0B6E8A">TBA</span></li>
-<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A5A63">04</span><span style="font-weight: 600">Camera-ready &amp; author registration</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; color: #0B6E8A">TBA</span></li>
-<li style="padding: 22px; border-radius: 14px; background: #10212B; color: #FFFFFF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #A9BAC3">05</span><span style="font-weight: 600">Conference</span><span style="font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 600; color: #F2B134">5–9 July</span></li>
+<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A6072">01 · Optional</span><span style="font-weight: 600">Abstract submission</span><span style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; color: #157A43">TBA</span></li>
+<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A6072">02</span><span style="font-weight: 600">Paper submission</span><span style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; color: #157A43">TBA</span></li>
+<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A6072">03</span><span style="font-weight: 600">Author notification</span><span style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; color: #157A43">TBA</span></li>
+<li style="padding: 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #4A6072">04</span><span style="font-weight: 600">Camera-ready &amp; author registration</span><span style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; color: #157A43">TBA</span></li>
+<li style="padding: 22px; border-radius: 14px; background: #15364E; color: #FFFFFF; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 13px; color: #B9CCDB">05</span><span style="font-weight: 600">Conference</span><span style="font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 600; color: #45C877">5–9 July</span></li>
 </ol>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px">
-<a href="#" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #DDE3E6; background: #FFFFFF; font-size: 14px; font-weight: 500; text-decoration: none; color: #10212B">Add deadlines to calendar (.ics)</a>
-<a href="#" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #DDE3E6; background: #FFFFFF; font-size: 14px; font-weight: 500; text-decoration: none; color: #10212B">Download brochure (PDF)</a>
+<a href="#" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #DCE6EF; background: #FFFFFF; font-size: 14px; font-weight: 500; text-decoration: none; color: #15364E">Add deadlines to calendar (.ics)</a>
+<a href="#" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #DCE6EF; background: #FFFFFF; font-size: 14px; font-weight: 500; text-decoration: none; color: #15364E">Download brochure (PDF)</a>
 </div>
 </section>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px">
-<div style="font-size: 14px; font-weight: 600; color: #0B6E8A; letter-spacing: 1px; text-transform: uppercase">Contribute</div>
-<h2 style="margin: 8px 0 28px; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.5px">Four ways to take part</h2>
+<div style="font-size: 14px; font-weight: 600; color: #157A43; letter-spacing: 1px; text-transform: uppercase">Contribute</div>
+<h2 style="margin: 8px 0 28px; font-family: 'Poppins', sans-serif; font-size: 40px; letter-spacing: -0.5px">Ways to take part</h2>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 16px">
-<a href="call-for-papers.html" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6; text-decoration: none; color: #10212B; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B6E8A" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 12h7M9 16h7"></path></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Research papers</span><span style="color: #4A5A63; line-height: 1.5">Original empirical, design and conceptual contributions to CSCW.</span></a>
-<a href="call-for-papers.html" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6; text-decoration: none; color: #10212B; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B6E8A" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V4h8v3"></path></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Industry papers</span><span style="color: #4A5A63; line-height: 1.5">Reports and lessons from cooperative work in practice.</span></a>
-<a href="call-for-papers.html" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6; text-decoration: none; color: #10212B; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B6E8A" stroke-width="1.8"><path d="M14 4l6 6-10 10H4v-6z"></path></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Tools</span><span style="color: #4A5A63; line-height: 1.5">Systems and prototypes that support cooperation.</span></a>
-<a href="call-for-papers.html" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6; text-decoration: none; color: #10212B; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B6E8A" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h5"></path></svg><span style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 600">Posters</span><span style="color: #4A5A63; line-height: 1.5">Early-stage work for conversation and feedback.</span></a>
+<a href="submissions.html#conference-papers" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF; text-decoration: none; color: #15364E; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#157A43" stroke-width="1.8"><path d="M6 3h9l4 4v14H6z"></path><path d="M9 12h7M9 16h7"></path></svg><span style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600">Conference papers</span><span style="color: #4A6072; line-height: 1.5">Full papers reporting original CSCW research.</span></a>
+<a href="submissions.html#exploratory-papers" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF; text-decoration: none; color: #15364E; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#157A43" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"></rect><path d="M8 7V4h8v3"></path></svg><span style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600">Exploratory papers</span><span style="color: #4A6072; line-height: 1.5">Smaller studies, works in progress and design probes that open up discussion.</span></a>
+<a href="submissions.html#workshops" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF; text-decoration: none; color: #15364E; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#157A43" stroke-width="1.8"><path d="M14 4l6 6-10 10H4v-6z"></path></svg><span style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600">Workshops</span><span style="color: #4A6072; line-height: 1.5">Propose a workshop or masterclass for the days before the main conference.</span></a>
+<a href="submissions.html#posters-and-demos" style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF; text-decoration: none; color: #15364E; display: flex; flex-direction: column; gap: 12px"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#157A43" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M8 8h8M8 12h5"></path></svg><span style="font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600">Posters and demos</span><span style="color: #4A6072; line-height: 1.5">Early-stage work and systems for conversation and feedback.</span></a>
 </div>
 </section>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 32px">
 <div>
-<div style="font-size: 14px; font-weight: 600; color: #0B6E8A; letter-spacing: 1px; text-transform: uppercase">Keynotes</div>
-<h2 style="margin: 8px 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 32px">Speakers announced soon</h2>
+<div style="font-size: 14px; font-weight: 600; color: #157A43; letter-spacing: 1px; text-transform: uppercase">Keynotes</div>
+<h2 style="margin: 8px 0 24px; font-family: 'Poppins', sans-serif; font-size: 32px">Speakers announced soon</h2>
 <div style="display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; gap: 16px; align-items: center; padding: 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6"><span style="width: 64px; height: 64px; flex: none; border-radius: 50%; background: #E3F0F3; color: #08546A; display: flex; align-items: center; justify-content: center; font-weight: 600">?</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">[Keynote speaker 1]</span><span style="font-size: 14px; color: #4A5A63">[Affiliation] · [Talk title]</span></span></div>
-<div style="display: flex; gap: 16px; align-items: center; padding: 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DDE3E6"><span style="width: 64px; height: 64px; flex: none; border-radius: 50%; background: #E3F0F3; color: #08546A; display: flex; align-items: center; justify-content: center; font-weight: 600">?</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">[Keynote speaker 2]</span><span style="font-size: 14px; color: #4A5A63">[Affiliation] · [Talk title]</span></span></div>
+<div style="display: flex; gap: 16px; align-items: center; padding: 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF"><span style="width: 64px; height: 64px; flex: none; border-radius: 50%; background: #E4F7EC; color: #01456F; display: flex; align-items: center; justify-content: center; font-weight: 600">?</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">[Keynote speaker 1]</span><span style="font-size: 14px; color: #4A6072">[Affiliation] · [Talk title]</span></span></div>
+<div style="display: flex; gap: 16px; align-items: center; padding: 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6EF"><span style="width: 64px; height: 64px; flex: none; border-radius: 50%; background: #E4F7EC; color: #01456F; display: flex; align-items: center; justify-content: center; font-weight: 600">?</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600">[Keynote speaker 2]</span><span style="font-size: 14px; color: #4A6072">[Affiliation] · [Talk title]</span></span></div>
 </div>
 </div>
 <div>
-<div style="font-size: 14px; font-weight: 600; color: #0B6E8A; letter-spacing: 1px; text-transform: uppercase">News</div>
-<h2 style="margin: 8px 0 24px; font-family: 'Space Grotesk', sans-serif; font-size: 32px">Latest updates</h2>
-<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #DDE3E6">
-<li style="border-bottom: 1px solid #DDE3E6"><a href="call-for-papers.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #10212B"><span style="flex: none; width: 76px; font-size: 14px; color: #4A5A63">[Date]</span><span style="font-weight: 500">Call for Papers is now open</span></a></li>
-<li style="border-bottom: 1px solid #DDE3E6"><a href="venue.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #10212B"><span style="flex: none; width: 76px; font-size: 14px; color: #4A5A63">[Date]</span><span style="font-weight: 500">The venue has been announced: St. Raphael Resort</span></a></li>
-<li style="border-bottom: 1px solid #DDE3E6"><a href="venue.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #10212B"><span style="flex: none; width: 76px; font-size: 14px; color: #4A5A63">[Date]</span><span style="font-weight: 500">Visa information has been released</span></a></li>
+<div style="font-size: 14px; font-weight: 600; color: #157A43; letter-spacing: 1px; text-transform: uppercase">News</div>
+<h2 style="margin: 8px 0 24px; font-family: 'Poppins', sans-serif; font-size: 32px">Latest updates</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #DCE6EF">
+<li style="border-bottom: 1px solid #DCE6EF"><a href="submissions.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #15364E"><span style="flex: none; width: 76px; font-size: 14px; color: #4A6072">[Date]</span><span style="font-weight: 500">Call for Papers is now open</span></a></li>
+<li style="border-bottom: 1px solid #DCE6EF"><a href="venue.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #15364E"><span style="flex: none; width: 76px; font-size: 14px; color: #4A6072">[Date]</span><span style="font-weight: 500">The venue has been announced: St. Raphael Resort</span></a></li>
+<li style="border-bottom: 1px solid #DCE6EF"><a href="venue.html" style="display: flex; gap: 20px; padding: 18px 4px; text-decoration: none; color: #15364E"><span style="flex: none; width: 76px; font-size: 14px; color: #4A6072">[Date]</span><span style="font-weight: 500">Visa information has been released</span></a></li>
 </ul>
+<a href="news.html" style="display: inline-block; margin-top: 16px; font-weight: 600">All news →</a>
 </div>
 </section>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px">
-<div style="border-radius: 24px; background: #E3F0F3; padding: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: center">
+<div style="border-radius: 24px; background: #E4F7EC; padding: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 40px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 16px">
-<div style="font-size: 14px; font-weight: 600; color: #08546A; letter-spacing: 1px; text-transform: uppercase">Host city</div>
-<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 40px; letter-spacing: -0.5px">Limassol, on the Mediterranean</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2D3E47">An EU member at the crossroads of three continents, Cyprus pairs sandy beaches and ancient sites with easy access from across Europe.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="venue.html" style="padding: 14px 20px; border-radius: 10px; background: #10212B; color: #FFFFFF; font-weight: 600; text-decoration: none">Venue &amp; travel guide</a><a href="venue.html" style="padding: 14px 20px; border-radius: 10px; border: 1px solid #10212B; color: #10212B; font-weight: 600; text-decoration: none">Accommodation</a></div>
+<div style="font-size: 14px; font-weight: 600; color: #01456F; letter-spacing: 1px; text-transform: uppercase">Host city</div>
+<h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 40px; letter-spacing: -0.5px">Limassol, on the Mediterranean</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2B4558">An EU member at the crossroads of three continents, Cyprus pairs sandy beaches and ancient sites with easy access from across Europe.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="venue.html" style="padding: 14px 20px; border-radius: 10px; background: #15364E; color: #FFFFFF; font-weight: 600; text-decoration: none">Venue &amp; travel guide</a><a href="venue.html#stay" style="padding: 14px 20px; border-radius: 10px; border: 1px solid #15364E; color: #15364E; font-weight: 600; text-decoration: none">Accommodation</a></div>
 </div>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
-<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #08546A">150</div><div style="font-size: 14px; color: #2D3E47">direct flight connections via Larnaca &amp; Paphos</div></div>
-<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #08546A">80+</div><div style="font-size: 14px; color: #2D3E47">airlines serving the island</div></div>
-<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #08546A">300+</div><div style="font-size: 14px; color: #2D3E47">sunny days a year</div></div>
-<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; color: #08546A">64</div><div style="font-size: 14px; color: #2D3E47">Blue Flag beaches</div></div>
+<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Poppins', sans-serif; font-size: 34px; font-weight: 700; color: #01456F">150</div><div style="font-size: 14px; color: #2B4558">direct flight connections via Larnaca &amp; Paphos</div></div>
+<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Poppins', sans-serif; font-size: 34px; font-weight: 700; color: #01456F">80+</div><div style="font-size: 14px; color: #2B4558">airlines serving the island</div></div>
+<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Poppins', sans-serif; font-size: 34px; font-weight: 700; color: #01456F">300+</div><div style="font-size: 14px; color: #2B4558">sunny days a year</div></div>
+<div style="padding: 20px; border-radius: 14px; background: #FFFFFF"><div style="font-family: 'Poppins', sans-serif; font-size: 34px; font-weight: 700; color: #01456F">64</div><div style="font-size: 14px; color: #2B4558">Blue Flag beaches</div></div>
 </div>
 </div>
 </section>
 
 <section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 88px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 24px">
-<div style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6"><div style="font-size: 14px; font-weight: 600; color: #4A5A63; margin-bottom: 16px">Organized by</div><div style="display: flex; flex-wrap: wrap; gap: 12px"><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B9C6CC; font-size: 14px; color: #4A5A63">[EUSSET logo]</span><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B9C6CC; font-size: 14px; color: #4A5A63">[University of Cyprus logo]</span></div></div>
-<div style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DDE3E6"><div style="font-size: 14px; font-weight: 600; color: #4A5A63; margin-bottom: 16px">Sponsors</div><div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center"><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B9C6CC; font-size: 14px; color: #4A5A63">[Sponsor]</span><a href="#" style="font-weight: 600">Become a sponsor →</a></div></div>
+<div style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF"><div style="font-size: 14px; font-weight: 600; color: #4A6072; margin-bottom: 16px">Organized by</div><div style="display: flex; flex-wrap: wrap; gap: 12px"><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B4C6D6; font-size: 14px; color: #4A6072">[EUSSET logo]</span><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B4C6D6; font-size: 14px; color: #4A6072">[University of Cyprus logo]</span></div></div>
+<div style="padding: 28px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6EF"><div style="font-size: 14px; font-weight: 600; color: #4A6072; margin-bottom: 16px">Sponsors</div><div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center"><span style="padding: 18px 22px; border-radius: 10px; border: 1px dashed #B4C6D6; font-size: 14px; color: #4A6072">[Sponsor]</span><a href="#" style="font-weight: 600">Become a sponsor →</a></div></div>
 </div>
 </section>
 
-<footer style="background: #10212B; color: #C9D4DA">
+<footer style="background: #15364E; color: #D5E1EB">
 <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 32px; font-size: 15px; line-height: 1.6">
-<div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 20px; font-weight: 700; color: #FFFFFF">ECSCW 2027</div><div>25th EUSSET Conference on Computer-Supported Cooperative Work</div><div style="margin-top: 8px">5–9 July 2027 · St. Raphael Resort, Limassol, Cyprus</div></div>
+<div><div style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; color: #FFFFFF">ECSCW 2027</div><div>25th EUSSET Conference on Computer-Supported Cooperative Work</div><div style="margin-top: 8px">5–9 July 2027 · St. Raphael Resort, Limassol, Cyprus</div></div>
 <div><div style="font-weight: 600; color: #FFFFFF">Academic matters</div><div>George A. Papadopoulos, University of Cyprus</div><div>papadopoulos.george[a]ucy.ac.cy</div></div>
 <div><div style="font-weight: 600; color: #FFFFFF">Registration &amp; logistics</div><div>EasyConferences</div><div>info[a]easyconferences.eu · +357 22591900</div></div>
-<div><div style="font-weight: 600; color: #FFFFFF">Follow</div><div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="#" style="color: #F2B134">LinkedIn</a><a href="#" style="color: #F2B134">Mastodon</a><a href="#" style="color: #F2B134">Bluesky</a></div></div>
+<div><div style="font-weight: 600; color: #FFFFFF">Follow</div><div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="#" style="color: #45C877">LinkedIn</a><a href="#" style="color: #45C877">Mastodon</a><a href="#" style="color: #45C877">Bluesky</a></div></div>
 </div>
-<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #2A4B5B; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #A9BAC3"><span>© 2027 ECSCW · EUSSET</span><span>Code of Conduct · Accessibility · Privacy</span></div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #2F6286; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #B9CCDB"><span>© 2027 ECSCW · EUSSET</span><span>Code of Conduct · Accessibility · Privacy</span></div>
 </footer>
 
 </div>
 
+<script src="assets/site.js"></script>
 </body>
 </html>

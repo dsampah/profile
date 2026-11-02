@@ -1,0 +1,73 @@
+/* ECSCW 2027 theme, taken from the announcement deck: navy, deep blue, green, Poppins. */
+:root{--navy:#15364E;--blue:#01456F;--green:#45C877;--green-text:#157A43;--mint:#E4F7EC;--paper:#F7FAFF;--line:#DCE6EF;--muted:#4A6072}
+
+[id]{scroll-margin-top:16px}
+
+/* Header and menu */
+.site-header{background:#FFFFFF;border-bottom:3px solid var(--green);position:relative;z-index:20}
+.site-header-inner{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--navy)}
+.brand img{display:block;height:52px;width:auto}
+.brand span{font-size:12.5px;line-height:1.35;color:var(--muted)}
+.menu-toggle{display:none;padding:10px 16px;border:1px solid var(--navy);border-radius:8px;background:#FFFFFF;color:var(--navy);font:600 15px Poppins,system-ui,sans-serif;cursor:pointer}
+.menu,.submenu{list-style:none;margin:0;padding:0}
+.menu{display:flex;align-items:center;gap:2px}
+.menu-item{position:relative;display:flex;align-items:center;flex-wrap:wrap}
+.menu-link{padding:12px 4px 12px 12px;border-radius:8px;font-size:15px;font-weight:500;color:var(--navy);text-decoration:none}
+.menu-link:hover{color:var(--blue)}
+.menu-item>.menu-link:last-child{padding-right:12px}
+.menu-link[aria-current]{font-weight:600;box-shadow:inset 0 -3px 0 var(--green);border-radius:0}
+.submenu-toggle{width:28px;height:44px;padding:0;border:0;border-radius:6px;background:none;color:var(--navy);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.submenu-toggle svg{transition:transform .15s}
+.submenu-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.submenu{display:none;position:absolute;top:100%;left:0;min-width:270px;padding:8px;background:#FFFFFF;border:1px solid var(--line);border-top:3px solid var(--green);border-radius:0 0 12px 12px;box-shadow:0 14px 30px rgba(21,54,78,.16)}
+.menu-item.open>.submenu{display:block}
+.submenu a{display:block;padding:10px 12px;border-radius:8px;font-size:14.5px;color:var(--navy);text-decoration:none}
+.submenu a:hover,.submenu a:focus-visible,.submenu a[aria-current]{background:var(--mint)}
+.menu-item:last-child>.submenu,.menu-item:nth-last-child(2)>.submenu{left:auto;right:0}
+@media (hover:hover) and (min-width:961px){
+.menu-item:hover>.submenu{display:block}
+.menu-item:hover>.submenu-toggle svg{transform:rotate(180deg)}
+}
+@media (max-width:960px){
+.menu-toggle{display:block}
+#main-menu{display:none;flex-basis:100%}
+#main-menu.open{display:block}
+.menu{flex-direction:column;align-items:stretch;padding-bottom:8px}
+.menu-item{justify-content:space-between;border-top:1px solid var(--line)}
+.menu-link{flex:1;padding:14px 4px}
+.menu-link[aria-current]{box-shadow:none}
+.submenu-toggle{width:44px}
+.submenu{position:static;flex-basis:100%;min-width:0;padding:0 0 8px 12px;border:0;box-shadow:none;border-radius:0}
+}
+@media (max-width:480px){.brand span{display:none}}
+
+/* Green diagonal from the deck, on the navy page headers */
+.page-head{position:relative;overflow:hidden}
+.page-head::after{content:"";position:absolute;top:0;right:0;width:300px;height:100%;background:var(--green);clip-path:polygon(100% 0,100% 42%,58% 0)}
+.page-head::before{content:"";position:absolute;top:0;right:0;width:300px;height:100%;background:var(--blue);clip-path:polygon(58% 0,100% 42%,100% 70%,30% 0)}
+.page-head>*{position:relative;z-index:1}
+
+/* Home banner: the text sits in the clear sky to the right of the tower */
+.hero{position:relative;isolation:isolate;height:clamp(460px,44vw,760px);overflow:hidden;background:#1F5FA8}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 5%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(1,69,111,.3) 0,rgba(1,69,111,.3) 45%,rgba(1,69,111,0) 64%)}
+.hero-text{z-index:1;position:absolute;top:clamp(20px,3vw,48px);left:52%;right:max(24px,calc((100vw - 1200px)/2));display:flex;flex-direction:column;align-items:flex-start;gap:clamp(6px,.8vw,12px);color:#FFFFFF}
+.hero-pill{display:inline-flex;padding:6px 14px;border-radius:999px;background:var(--green);color:var(--navy);font-size:13.5px;font-weight:600}
+.hero h1{margin:0;font-size:clamp(44px,5.6vw,88px);font-weight:700;line-height:1.05;letter-spacing:-1px}
+.hero-sub{margin:0;font-size:clamp(16px,1.65vw,24px);font-weight:500;line-height:1.3}
+.hero-when{margin:0;font-size:clamp(15px,1.45vw,21px);font-weight:600;color:#FFFFFF}
+.hero-bar{position:relative;overflow:hidden;background:var(--navy);color:#FFFFFF}
+.hero-bar::after{content:"";position:absolute;top:0;right:0;bottom:0;width:190px;background:var(--green);clip-path:polygon(62% 0,100% 0,100% 100%,0 100%)}
+.hero-bar-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:20px 170px 20px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 32px}
+@media (min-width:1600px){.hero-bar-inner{padding-right:24px}}
+@media (max-width:760px){
+.hero{height:520px}
+.hero-photo{object-position:85% 0}
+.hero-text{left:24px;right:24px;top:18px}
+.hero-bar::after{width:90px}
+.page-head::before,.page-head::after{width:130px;height:150px}
+.hero-bar-inner{padding-right:64px}
+}
+
+.committee-card{overflow-wrap:anywhere}
