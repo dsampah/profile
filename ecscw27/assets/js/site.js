@@ -198,6 +198,29 @@
 			});
 		});
 
+		// During the conference, open on today's tab (today in the conference time zone).
+		// For testing, ?today=2027-07-07 pretends it is that day.
+		if (tabList) {
+			var today = new URLSearchParams(window.location.search).get('today');
+			if (!/^\d{4}-\d{2}-\d{2}$/.test(today || '')) {
+				try {
+					var parts = {};
+					new Intl.DateTimeFormat('en-US', { timeZone: tabList.getAttribute('data-tz') || undefined, year: 'numeric', month: '2-digit', day: '2-digit' })
+						.formatToParts(new Date()).forEach(function (p) { parts[p.type] = p.value; });
+					today = parts.year + '-' + parts.month + '-' + parts.day;
+				} catch (err) { today = ''; }
+			}
+			tabs.forEach(function (t, i) {
+				if (today && t.getAttribute('data-date') === today) {
+					t.setAttribute('aria-current', 'date');
+					var dow = t.querySelector('.day-tab-dow');
+					if (dow) dow.textContent = tabList.getAttribute('data-today-label') || 'Today';
+					state.day = i;
+					tabs.forEach(function (o, n) { o.setAttribute('aria-selected', n === i); o.tabIndex = n === i ? 0 : -1; });
+				}
+			});
+		}
+
 		render();
 	}
 

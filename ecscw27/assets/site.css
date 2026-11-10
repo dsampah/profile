@@ -443,6 +443,7 @@ a.card:hover { border-color: var(--green); box-shadow: 0 10px 24px rgba(21, 54, 
 .day-tab:hover { background: #0B5686; }
 .day-tab[aria-selected="true"] { background: var(--paper); color: var(--navy); }
 .day-tab-dow { display: block; font-size: 13px; opacity: .8; }
+.day-tab[aria-current="date"] .day-tab-dow { opacity: 1; font-weight: 600; }
 .day-tab-date { display: block; font-size: 20px; font-weight: 600; }
 @media (max-width: 600px) {
 	/* Phones: the day tabs share the width, so every date is visible without scrolling. */
