@@ -75,10 +75,12 @@
 		// Remember each session's searchable text (time, type, title, room, day) and original labels.
 		sessions.forEach(function (s) {
 			var panel = s.closest('.day-panel');
-			var parts = ['.session-time', '.session-type', '.session-title', '.session-room'].map(function (sel) {
-				var el = s.querySelector(sel);
-				if (el && (sel === '.session-title' || sel === '.session-room')) el.setAttribute('data-text', el.textContent);
-				return el ? el.textContent : '';
+			var parts = [];
+			['.session-time', '.session-type', '.session-title', '.session-details', '.session-room', '.session-chair', '.paper-title-text', '.paper-authors', '.paper-note'].forEach(function (sel) {
+				s.querySelectorAll(sel).forEach(function (el) {
+					if (sel !== '.session-time' && sel !== '.session-type') el.setAttribute('data-text', el.textContent);
+					parts.push(el.textContent);
+				});
 			});
 			parts.push(panel ? panel.getAttribute('data-title') : '');
 			s.setAttribute('data-search', fold(parts.join(' ')));

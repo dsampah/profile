@@ -2,7 +2,7 @@
 Theme Name: ECSCW 2027
 Author: ECSCW 2027
 Description: Conference theme for ECSCW 2027, the 25th EUSSET Conference on Computer-Supported Cooperative Work (Limassol, Cyprus). Navy, deep blue and green with Poppins, taken from the ECSCW 2027 announcement deck. Includes a photo hero home page, dropdown navigation, page header bands, an interactive program schedule and a one-click setup (Appearance → ECSCW Setup) that creates all conference pages and the main menu.
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 6.2
 Tested up to: 7.1
 Requires PHP: 8.3
@@ -272,6 +272,7 @@ a.card:hover { border-color: var(--green); box-shadow: 0 10px 24px rgba(21, 54, 
 .person-meta { font-size: 14px; color: var(--muted); }
 .person-email { font-size: 13px; color: var(--blue); font-weight: 500; }
 .committee-card, .contact-strip, .callout-text, .info-value, .footer-cols, .footer-compact, .footer-bottom, .person-info, .entry-content td, .hotel-body { overflow-wrap: anywhere; }
+.committee-card .avatar { width: 88px; height: 88px; }
 .committee-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 14px; }
 .committee-group { display: flex; flex-direction: column; gap: 18px; }
 
@@ -468,7 +469,17 @@ a.card:hover { border-color: var(--green); box-shadow: 0 10px 24px rgba(21, 54, 
 .session-type--break { background: var(--wash); color: var(--muted); }
 .session-type--social { background: #E2ECF6; color: var(--blue); }
 .session-title { font-size: 17px; font-weight: 600; }
+.session-details { font-size: 14px; line-height: 1.5; color: var(--muted); white-space: pre-line; }
+.session-papers { margin: 6px 0 0; padding-left: 1.5em; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.45; }
+.session-papers li::marker { color: var(--muted); font-weight: 600; }
+.paper-title { font-weight: 500; color: var(--ink-2); }
+.paper-title a { color: var(--blue); }
+.paper-authors { display: block; font-size: 14px; color: var(--muted); }
+.paper-note { display: inline-block; margin-top: 4px; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600; background: #FFF4C2; color: #5C4500; }
+.session-link { align-self: flex-start; font-size: 14px; font-weight: 600; color: var(--blue); }
 .session-room { flex: 0 0 auto; font-size: 14px; color: var(--muted); }
+.session-place { flex: 0 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; overflow-wrap: anywhere; }
+.session-chair { font-size: 14px; color: var(--ink-2); }
 .bookmark { flex: none; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line); background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--blue); }
 .bookmark svg { fill: none; }
 .bookmark[aria-pressed="true"] { border-color: var(--green); }
