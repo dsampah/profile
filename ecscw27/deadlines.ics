@@ -8,9 +8,69 @@ X-WR-TIMEZONE:Europe/Nicosia
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
+UID:deadline-1@dsampah.github.io
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+TRANSP:TRANSPARENT
+SUMMARY:ECSCW 2027: Abstract submission deadline (AoE)
+DESCRIPTION:Applies to: Papers. Deadlines are Anywhere on Earth (UTC-12). h
+ ttps://dsampah.github.io/profile/ecscw27/submissions.html
+URL:https://dsampah.github.io/profile/ecscw27/submissions.html
+END:VEVENT
+BEGIN:VEVENT
+UID:deadline-2@dsampah.github.io
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+TRANSP:TRANSPARENT
+SUMMARY:ECSCW 2027: Paper submission deadline (AoE)
+DESCRIPTION:Applies to: All types. Deadlines are Anywhere on Earth (UTC-12)
+ . https://dsampah.github.io/profile/ecscw27/submissions.html
+URL:https://dsampah.github.io/profile/ecscw27/submissions.html
+END:VEVENT
+BEGIN:VEVENT
+UID:deadline-3@dsampah.github.io
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+TRANSP:TRANSPARENT
+SUMMARY:ECSCW 2027: Author notification deadline (AoE)
+DESCRIPTION:Applies to: All types. Deadlines are Anywhere on Earth (UTC-12)
+ . https://dsampah.github.io/profile/ecscw27/submissions.html
+URL:https://dsampah.github.io/profile/ecscw27/submissions.html
+END:VEVENT
+BEGIN:VEVENT
+UID:deadline-4@dsampah.github.io
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+TRANSP:TRANSPARENT
+SUMMARY:ECSCW 2027: Camera-ready deadline (AoE)
+DESCRIPTION:Applies to: Accepted papers. Deadlines are Anywhere on Earth (U
+ TC-12). https://dsampah.github.io/profile/ecscw27/submissions.html
+URL:https://dsampah.github.io/profile/ecscw27/submissions.html
+END:VEVENT
+BEGIN:VEVENT
+UID:deadline-5@dsampah.github.io
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+TRANSP:TRANSPARENT
+SUMMARY:ECSCW 2027: Author registration deadline (AoE)
+DESCRIPTION:Applies to: One author per paper. Deadlines are Anywhere on Ear
+ th (UTC-12). https://dsampah.github.io/profile/ecscw27/submissions.html
+URL:https://dsampah.github.io/profile/ecscw27/submissions.html
+END:VEVENT
+BEGIN:VEVENT
 UID:conference@dsampah.github.io
-DTSTAMP:20261110T114954Z
-SEQUENCE:1794260158
+DTSTAMP:20261110T211115Z
+SEQUENCE:1794344732
 DTSTART;VALUE=DATE:20270705
 DTEND;VALUE=DATE:20270710
 TRANSP:TRANSPARENT
