@@ -498,6 +498,8 @@ a.card:hover { border-color: var(--green); box-shadow: 0 10px 24px rgba(21, 54, 
 .schedule.is-searching .day-panel + .day-panel { margin-top: 12px; }
 .schedule-empty { margin: 0; padding: 24px; border-radius: 14px; background: #FFFFFF; border: 1px dashed var(--line); color: var(--muted); }
 .schedule-empty[hidden] { display: none; }
+.link-button { padding: 0; border: 0; background: none; font: inherit; font-weight: 600; color: var(--blue); text-decoration: underline; cursor: pointer; }
+.link-button:hover { color: var(--navy); }
 mark.hit { background: #FFF3B0; color: inherit; border-radius: 3px; padding: 0 1px; }
 .day-tabs.is-searching .day-tab[aria-selected="true"] { background: var(--blue); color: #FFFFFF; }
 

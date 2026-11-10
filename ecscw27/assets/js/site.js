@@ -62,6 +62,7 @@
 		var searchInput = searchForm ? searchForm.querySelector('input') : null;
 		var clearBtn = schedule.querySelector('[data-search-clear]');
 		var emptyMsg = schedule.querySelector('[data-search-empty]');
+		var filterMsg = schedule.querySelector('[data-filter-empty]');
 		var state = { day: 0, type: '', query: '' };
 
 		var fold = function (str) {
@@ -106,7 +107,7 @@
 		var render = function () {
 			var words = fold(state.query).split(/\s+/).filter(Boolean);
 			var searching = words.length > 0;
-			var total = 0;
+			var total = 0, counts = [];
 			schedule.classList.toggle('is-searching', searching);
 			if (tabList) tabList.classList.toggle('is-searching', searching);
 
@@ -120,6 +121,7 @@
 					if (ok) shown++;
 					s.querySelectorAll('[data-text]').forEach(function (el) { highlight(el, words); });
 				});
+				counts[n] = shown;
 				p.hidden = searching ? shown === 0 : n !== state.day;
 				if (searching) total += shown;
 			});
@@ -132,6 +134,30 @@
 				}
 			}
 			if (emptyMsg) emptyMsg.hidden = !(searching && total === 0);
+			// A filter with no sessions on the chosen day: say so and offer the days that have them.
+			if (filterMsg) {
+				var none = !searching && state.type && !counts[state.day];
+				filterMsg.hidden = !none;
+				filterMsg.textContent = '';
+				if (none) {
+					var active = schedule.querySelector('.filter[aria-pressed="true"]');
+					filterMsg.appendChild(document.createTextNode(filterMsg.getAttribute('data-none').replace('%s', active ? active.textContent : '') + ' '));
+					var days = [];
+					tabs.forEach(function (t, n) { if (counts[n]) days.push(n); });
+					if (days.length) {
+						filterMsg.appendChild(document.createTextNode(filterMsg.getAttribute('data-see') + ' '));
+						days.forEach(function (n, k) {
+							var btn = document.createElement('button');
+							btn.type = 'button';
+							btn.className = 'link-button';
+							btn.textContent = tabs[n].querySelector('.day-tab-date') ? tabs[n].querySelector('.day-tab-date').textContent : tabs[n].textContent;
+							btn.addEventListener('click', function () { selectDay(n, true); });
+							filterMsg.appendChild(btn);
+							if (k < days.length - 1) filterMsg.appendChild(document.createTextNode(', '));
+						});
+					}
+				}
+			}
 			if (clearBtn) clearBtn.hidden = !searching;
 		};
 

@@ -9,11 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:program-d1-s1@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T060000Z
 DTEND:20270705T073000Z
-SUMMARY:Workshop: [Workshop 1] · [Workshop 2]
+SUMMARY:Workshops: [Workshop 1] · [Workshop 2]
 LOCATION:Atrium A · Atrium B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Monday 5 July · [Workshops / Doctoral Colloquium
  ] https://dsampah.github.io/profile/ecscw27/program.html
@@ -21,7 +21,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d1-s2@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T073000Z
 DTEND:20270705T080000Z
@@ -33,11 +33,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d1-s3@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T080000Z
 DTEND:20270705T093000Z
-SUMMARY:Workshop: [Doctoral Colloquium]
+SUMMARY:Doctoral Colloquium: [Doctoral Colloquium]
 LOCATION:Atrium C\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Monday 5 July · [Workshops / Doctoral Colloquium
  ] https://dsampah.github.io/profile/ecscw27/program.html
@@ -45,7 +45,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d1-s4@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T093000Z
 DTEND:20270705T110000Z
@@ -57,19 +57,31 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d1-s5@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T110000Z
-DTEND:20270705T150000Z
-SUMMARY:Workshop: [Workshops continue]
-LOCATION:Atrium A–C\, St. Raphael Resort & Marina
+DTEND:20270705T130000Z
+SUMMARY:Masterclasses/Tutorials: [Masterclass 1] · [Tutorial 1]
+LOCATION:Atrium A · Atrium B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Monday 5 July · [Workshops / Doctoral Colloquium
  ] https://dsampah.github.io/profile/ecscw27/program.html
 URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d1-s6@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270705T130000Z
+DTEND:20270705T150000Z
+SUMMARY:Workshops: [Workshops continue]
+LOCATION:Atrium A–C\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Monday 5 July · [Workshops / Doctoral Colloquium
+ ] https://dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d1-s7@dsampah.github.io
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270705T150000Z
 DTEND:20270705T163000Z
@@ -81,11 +93,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s1@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T060000Z
 DTEND:20270706T073000Z
-SUMMARY:Workshop: [Workshop 1] · [Workshop 2]
+SUMMARY:Workshops: [Workshop 1] · [Workshop 2]
 LOCATION:Atrium A · Atrium B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Tuesday 6 July · [Workshops] https://dsampah.git
  hub.io/profile/ecscw27/program.html
@@ -93,7 +105,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s2@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T073000Z
 DTEND:20270706T080000Z
@@ -105,11 +117,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s3@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T080000Z
 DTEND:20270706T093000Z
-SUMMARY:Workshop: [Doctoral Colloquium]
+SUMMARY:Doctoral Colloquium: [Doctoral Colloquium]
 LOCATION:Atrium C\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Tuesday 6 July · [Workshops] https://dsampah.git
  hub.io/profile/ecscw27/program.html
@@ -117,7 +129,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s4@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T093000Z
 DTEND:20270706T110000Z
@@ -129,19 +141,31 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s5@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T110000Z
-DTEND:20270706T150000Z
-SUMMARY:Workshop: [Workshops continue]
-LOCATION:Atrium A–C\, St. Raphael Resort & Marina
+DTEND:20270706T130000Z
+SUMMARY:Masterclasses/Tutorials: [Masterclass 1] · [Tutorial 1]
+LOCATION:Atrium A · Atrium B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Tuesday 6 July · [Workshops] https://dsampah.git
  hub.io/profile/ecscw27/program.html
 URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d2-s6@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270706T130000Z
+DTEND:20270706T150000Z
+SUMMARY:Workshops: [Workshops continue]
+LOCATION:Atrium A–C\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Tuesday 6 July · [Workshops] https://dsampah.git
+ hub.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d2-s7@dsampah.github.io
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270706T150000Z
 DTEND:20270706T163000Z
@@ -153,7 +177,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s1@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T053000Z
 DTEND:20270707T063000Z
@@ -165,7 +189,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s2@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T063000Z
 DTEND:20270707T080000Z
@@ -177,11 +201,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s3@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T080000Z
 DTEND:20270707T093000Z
-SUMMARY:Papers: [Paper session A] · [Paper session B]
+SUMMARY:Conference Papers: [Paper session A] · [Paper session B]
 LOCATION:Megaron A · Megaron B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Wednesday 7 July · Main conference\, day 1 https
  ://dsampah.github.io/profile/ecscw27/program.html
@@ -189,7 +213,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s4@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T093000Z
 DTEND:20270707T110000Z
@@ -201,19 +225,43 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s5@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T110000Z
-DTEND:20270707T163000Z
-SUMMARY:Papers: [Paper session C] · [Posters & Tools demos]
-LOCATION:Megaron C · Atrium\, St. Raphael Resort & Marina
+DTEND:20270707T120000Z
+SUMMARY:Exploratory Papers: [Exploratory papers session]
+LOCATION:Megaron A\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Wednesday 7 July · Main conference\, day 1 https
  ://dsampah.github.io/profile/ecscw27/program.html
 URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d3-s6@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270707T120000Z
+DTEND:20270707T130000Z
+SUMMARY:Journal Papers: [Journal papers session]
+LOCATION:Megaron B\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Wednesday 7 July · Main conference\, day 1 https
+ ://dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d3-s7@dsampah.github.io
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270707T130000Z
+DTEND:20270707T163000Z
+SUMMARY:Posters and Demos: [Posters and demos]
+LOCATION:Atrium\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Wednesday 7 July · Main conference\, day 1 https
+ ://dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d3-s8@dsampah.github.io
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270707T163000Z
 DTEND:20270707T180000Z
@@ -225,7 +273,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s1@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T053000Z
 DTEND:20270708T063000Z
@@ -237,7 +285,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s2@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T063000Z
 DTEND:20270708T080000Z
@@ -249,11 +297,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s3@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T080000Z
 DTEND:20270708T093000Z
-SUMMARY:Papers: [Paper session A] · [Paper session B]
+SUMMARY:Conference Papers: [Paper session A] · [Paper session B]
 LOCATION:Megaron A · Megaron B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Thursday 8 July · Main conference\, day 2 https:
  //dsampah.github.io/profile/ecscw27/program.html
@@ -261,7 +309,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s4@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T093000Z
 DTEND:20270708T110000Z
@@ -273,19 +321,43 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s5@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T110000Z
-DTEND:20270708T163000Z
-SUMMARY:Papers: [Paper session C] · [Posters & Tools demos]
-LOCATION:Megaron C · Atrium\, St. Raphael Resort & Marina
+DTEND:20270708T120000Z
+SUMMARY:Exploratory Papers: [Exploratory papers session]
+LOCATION:Megaron A\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Thursday 8 July · Main conference\, day 2 https:
  //dsampah.github.io/profile/ecscw27/program.html
 URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d4-s6@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270708T120000Z
+DTEND:20270708T130000Z
+SUMMARY:Journal Papers: [Journal papers session]
+LOCATION:Megaron B\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Thursday 8 July · Main conference\, day 2 https:
+ //dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d4-s7@dsampah.github.io
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270708T130000Z
+DTEND:20270708T163000Z
+SUMMARY:Posters and Demos: [Posters and demos]
+LOCATION:Atrium\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Thursday 8 July · Main conference\, day 2 https:
+ //dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d4-s8@dsampah.github.io
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270708T163000Z
 DTEND:20270708T180000Z
@@ -297,7 +369,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s1@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T053000Z
 DTEND:20270709T063000Z
@@ -309,7 +381,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s2@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T063000Z
 DTEND:20270709T080000Z
@@ -321,11 +393,11 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s3@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T080000Z
 DTEND:20270709T093000Z
-SUMMARY:Papers: [Paper session A] · [Paper session B]
+SUMMARY:Conference Papers: [Paper session A] · [Paper session B]
 LOCATION:Megaron A · Megaron B\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Friday 9 July · Main conference\, day 3 https://
  dsampah.github.io/profile/ecscw27/program.html
@@ -333,7 +405,7 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s4@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T093000Z
 DTEND:20270709T110000Z
@@ -345,19 +417,43 @@ URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s5@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T110000Z
-DTEND:20270709T163000Z
-SUMMARY:Papers: [Paper session C] · [Posters & Tools demos]
-LOCATION:Megaron C · Atrium\, St. Raphael Resort & Marina
+DTEND:20270709T120000Z
+SUMMARY:Exploratory Papers: [Exploratory papers session]
+LOCATION:Megaron A\, St. Raphael Resort & Marina
 DESCRIPTION:ECSCW 2027 · Friday 9 July · Main conference\, day 3 https://
  dsampah.github.io/profile/ecscw27/program.html
 URL:https://dsampah.github.io/profile/ecscw27/program.html
 END:VEVENT
 BEGIN:VEVENT
 UID:program-d5-s6@dsampah.github.io
-DTSTAMP:20261110T211115Z
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270709T120000Z
+DTEND:20270709T130000Z
+SUMMARY:Journal Papers: [Journal papers session]
+LOCATION:Megaron B\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Friday 9 July · Main conference\, day 3 https://
+ dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d5-s7@dsampah.github.io
+DTSTAMP:20261110T213042Z
+SEQUENCE:1794344732
+DTSTART:20270709T130000Z
+DTEND:20270709T163000Z
+SUMMARY:Posters and Demos: [Posters and demos]
+LOCATION:Atrium\, St. Raphael Resort & Marina
+DESCRIPTION:ECSCW 2027 · Friday 9 July · Main conference\, day 3 https://
+ dsampah.github.io/profile/ecscw27/program.html
+URL:https://dsampah.github.io/profile/ecscw27/program.html
+END:VEVENT
+BEGIN:VEVENT
+UID:program-d5-s8@dsampah.github.io
+DTSTAMP:20261110T213042Z
 SEQUENCE:1794344732
 DTSTART:20270709T163000Z
 DTEND:20270709T180000Z
