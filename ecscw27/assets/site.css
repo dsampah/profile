@@ -125,7 +125,8 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font); line-height: 1.2; }
 .page-head::before { content: ""; position: absolute; top: 0; right: 0; width: 300px; height: 100%; background: var(--blue); clip-path: polygon(58% 0, 100% 42%, 100% 70%, 30% 0); }
 .page-head > * { position: relative; z-index: 1; }
 .page-head-inner { padding-top: 56px; padding-bottom: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; }
-.page-head-inner--tabs { padding-bottom: 0; flex-direction: column; align-items: stretch; gap: 16px; }
+.page-head-inner--tabs { padding-bottom: 0; flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 16px; }
+.page-head-inner--tabs > * { min-width: 0; }
 .page-head-main { display: flex; flex-direction: column; gap: 14px; max-width: 720px; }
 .page-head-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px; }
 .breadcrumb { font-size: 14px; color: var(--on-navy-muted); }
@@ -433,6 +434,13 @@ a.card:hover { border-color: var(--green); box-shadow: 0 10px 24px rgba(21, 54, 
 .day-tab[aria-selected="true"] { background: var(--paper); color: var(--navy); }
 .day-tab-dow { display: block; font-size: 13px; opacity: .8; }
 .day-tab-date { display: block; font-size: 20px; font-weight: 600; }
+@media (max-width: 600px) {
+	/* Phones: the day tabs share the width, so every date is visible without scrolling. */
+	.day-tabs { gap: 6px; }
+	.day-tab { flex: 1 1 0; min-width: 48px; padding: 10px 4px; border-radius: 10px 10px 0 0; text-align: center; }
+	.day-tab-dow { font-size: 12px; }
+	.day-tab-date { font-size: 15px; line-height: 1.25; }
+}
 .schedule { display: flex; flex-direction: column; gap: 20px; }
 .schedule-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; }
 .schedule-head h2 { margin: 0; font-size: 28px; }
